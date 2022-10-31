@@ -101,7 +101,8 @@ class MyApp extends StatelessWidget {
                     fillColor: Color(0xfff6f7fa),
                     filled: true,
                     focusedBorder: OutlineInputBorder(
-                      borderSide: BorderSide(color: Colors.red),
+                      borderSide: BorderSide(color: Color(0xfff6f7fa)),
+                      borderRadius: BorderRadius.circular(15)
                     ),
                     hintStyle: TextStyle(
                         fontFamily: "Rubik-MediuM"
@@ -109,7 +110,8 @@ class MyApp extends StatelessWidget {
                     enabledBorder: OutlineInputBorder(
                         borderSide: BorderSide(
                             color: Color(0xfff6f7fa)
-                        )
+                        ),
+                      borderRadius: BorderRadius.circular(15)
                     )
                 ),
               ),),
@@ -118,8 +120,14 @@ class MyApp extends StatelessWidget {
                 decoration: InputDecoration(
                     hintText: "Password",
                     prefixIcon: Icon(Icons.password),
+                    suffixIcon: Icon(Icons.visibility_off),
                     enabledBorder: OutlineInputBorder(
-                        borderSide: BorderSide(color: Color(0xfff6f7fa))
+                        borderSide: BorderSide(color: Color(0xfff6f7fa)),
+                      borderRadius: BorderRadius.circular(15)
+                    ),
+                    focusedBorder: OutlineInputBorder(
+                      borderSide: BorderSide(color: Color(0xfff6f7fa)),
+                      borderRadius: BorderRadius.circular(15)
                     ),
                     filled: true,
                     fillColor: Color(0xfff6f7fa),
